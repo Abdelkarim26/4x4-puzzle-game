@@ -29,6 +29,19 @@ button {
   padding: 4rem 0 2rem;
 }
 
+.creator-credit {
+  margin: 0 0 1.25rem;
+  color: #68e4c5;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.creator-credit strong {
+  color: #f5f7ff;
+}
+
 .game-header {
   display: flex;
   align-items: end;
