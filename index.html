@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4×4 Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">Classic sliding puzzle</p>
+          <h1>4×4 Puzzle</h1>
+          <p class="subtitle">Arrange every tile in order.</p>
+        </div>
+        <div class="stats" aria-label="Game statistics">
+          <div class="stat">
+            <span class="stat-label">Moves</span>
+            <strong id="move-count">0</strong>
+          </div>
+          <div class="stat">
+            <span class="stat-label">Time</span>
+            <strong id="timer">00:00</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="board-card" aria-label="Sliding puzzle game">
+        <div id="board" class="board" role="grid" aria-label="4 by 4 puzzle board"></div>
+        <p id="message" class="message" role="status">Move a tile next to the empty space to begin.</p>
+      </section>
+
+      <div class="controls">
+        <button id="new-game" class="button button-primary" type="button">New game</button>
+        <button id="reset-game" class="button button-secondary" type="button">Reset</button>
+      </div>
+
+      <p class="tip">Tip: use the arrow keys or click a tile next to the empty space.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
